@@ -1,5 +1,5 @@
 # PRODIGY_SD_1
-# Temperature Conversion Program in Java
+# Temperature Conversion Program (using Java)
 This is a simple Java program that allows you to convert temperatures between Celsius, Fahrenheit, and Kelvin.
 Usage :-
 The program provides a simple command-line interface that guides you through the temperature conversion process.\
