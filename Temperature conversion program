@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 public class temperatureconversion {
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Temperature Converter");
@@ -15,48 +17,46 @@ public class temperatureconversion {
         System.out.print("Enter your choice ");
         int choice = scanner.nextInt();
 
-        double inputTemperature, resultTemperature;
+        double input, result;
 
         switch (choice) {
-            case 1:
+            case 1 -> {
                 System.out.print("Enter temperature in Celsius: ");
-                inputTemperature = scanner.nextDouble();
-                resultTemperature = (inputTemperature * 9/5) + 32;
-                System.out.println("Temperature in Fahrenheit: " + resultTemperature);
-                break;
-            case 2:
+                input = scanner.nextDouble();
+                result = (input * 9 / 5) + 32;
+                System.out.println("Temperature in Fahrenheit: " + result);
+            }
+            case 2 -> {
                 System.out.print("Enter temperature in Fahrenheit: ");
-                inputTemperature = scanner.nextDouble();
-                resultTemperature = (inputTemperature - 32) * 5/9;
-                System.out.println("Temperature in Celsius: " + resultTemperature);
-                break;
-            case 3:
+                input = scanner.nextDouble();
+                result = (input - 32) * 5 / 9;
+                System.out.println("Temperature in Celsius: " + result);
+            }
+            case 3 -> {
                 System.out.print("Enter temperature in Celsius: ");
-                inputTemperature = scanner.nextDouble();
-                resultTemperature = inputTemperature + 273.15;
-                System.out.println("Temperature in Kelvin: " + resultTemperature);
-                break;
-            case 4:
+                input = scanner.nextDouble();
+                result = input + 273.15;
+                System.out.println("Temperature in Kelvin: " + result);
+            }
+            case 4 -> {
                 System.out.print("Enter temperature in Kelvin: ");
-                inputTemperature = scanner.nextDouble();
-                resultTemperature = inputTemperature - 273.15;
-                System.out.println("Temperature in Celsius: " + resultTemperature);
-                break;
-            case 5:
+                input = scanner.nextDouble();
+                result = input - 273.15;
+                System.out.println("Temperature in Celsius: " + result);
+            }
+            case 5 -> {
                 System.out.print("Enter temperature in Fahrenheit: ");
-                inputTemperature = scanner.nextDouble();
-                resultTemperature = ((inputTemperature - 32) * 5/9) + 273.15;
-                System.out.println("Temperature in Kelvin: " + resultTemperature);
-                break;
-            case 6:
+                input = scanner.nextDouble();
+                result = ((input - 32) * 5 / 9) + 273.15;
+                System.out.println("Temperature in Kelvin: " + result);
+            }
+            case 6 -> {
                 System.out.print("Enter temperature in Kelvin: ");
-                inputTemperature = scanner.nextDouble();
-                resultTemperature = ((inputTemperature - 273.15) * 9/5) + 32;
-                System.out.println("Temperature in Fahrenheit: " + resultTemperature);
-                break;
-            default:
-                System.out.println("Invalid choice. Please enter a valid option (1/2/3/4/5/6).");
-                break;
+                input = scanner.nextDouble();
+                result = ((input - 273.15) * 9 / 5) + 32;
+                System.out.println("Temperature in Fahrenheit: " + result);
+            }
+            default -> System.out.println("Invalid choice. Please enter a valid option");
         }
         scanner.close();
     }
