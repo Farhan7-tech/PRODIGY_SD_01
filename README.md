@@ -7,21 +7,7 @@ The program provides a simple command-line interface that guides you through the
 below is the process, how things gonna work.
 
 for example :-
-java TemperatureConverter
+ Basically it gives you 6 choices for the conversion between  celsius, fahrenheit and kelvin.
+ then we have to enter our choice. let say we choose  that option which convert celsius to fahrenheit
+ then we have to enter the temperature value in celsius. and program converts it into fahrenheit.
 
-Welcome to the Temperature Converter!
-
-Please select the source temperature scale:
-1. Celsius
-2. Fahrenheit
-3. Kelvin
-Enter your choice: 1
-
-Enter the temperature in Celsius: 25
-
-Please select the target temperature scale:
-1. Fahrenheit
-2. Kelvin
-Enter your choice: 2
-
-Result: 298.15 Kelvin
